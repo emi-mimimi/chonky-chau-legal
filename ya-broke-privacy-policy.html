@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ya Broke — Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sage:      #2C6B48;
+      --sage-tint: #E7F1EA;
+      --ink:       #1D2620;
+      --slate:     #6B7C72;
+      --cloud:     #FAFAF7;
+      --butter:    #F5E6C8;
+      --hairline:  #E2DAC8;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #F5F2E9;
+      background-image: radial-gradient(circle, rgba(0,0,0,0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: var(--sage);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .header-badge {
+      display: inline-block;
+      background: rgba(245,242,233,0.15);
+      border-radius: 9999px;
+      padding: 6px 16px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(245,242,233,0.8);
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #F5F2E9;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .header-mascot {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .header-meta {
+      font-size: 0.82rem;
+      color: rgba(245,242,233,0.65);
+      margin-top: 12px;
+    }
+
+    /* ── Content ── */
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .intro-card {
+      background: var(--sage-tint);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 32px;
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+    .intro-card strong { color: var(--sage); }
+
+    /* ── Section ── */
+    .section {
+      background: #fff;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 16px;
+      border: 1.5px solid var(--hairline);
+    }
+    .section h2 {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--sage);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section h2 .icon {
+      font-size: 1.1rem;
+    }
+    .section p, .section li {
+      font-size: 0.92rem;
+      color: #3a3a3a;
+      margin-bottom: 6px;
+    }
+    .section ul {
+      padding-left: 20px;
+    }
+    .section ul li { margin-bottom: 4px; }
+    .section a { color: var(--sage); font-weight: 600; text-decoration: none; }
+    .section a:hover { text-decoration: underline; }
+
+    /* ── Third party pills ── */
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .pill {
+      display: inline-block;
+      background: var(--sage-tint);
+      color: var(--sage);
+      border-radius: 9999px;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .pill:hover { background: #d4e8da; }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--sage);
+      border-radius: 18px;
+      padding: 28px 24px;
+      text-align: center;
+      margin-top: 32px;
+    }
+    .contact-card h2 {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #F5F2E9;
+      margin-bottom: 8px;
+    }
+    .contact-card p { color: rgba(245,242,233,0.8); font-size: 0.9rem; margin-bottom: 16px; }
+    .contact-btn {
+      display: inline-block;
+      background: #F5F2E9;
+      color: var(--sage);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 11px 24px;
+      border-radius: 9999px;
+      text-decoration: none;
+    }
+    .contact-btn:hover { background: var(--sage-tint); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      color: var(--slate);
+      font-size: 0.8rem;
+      margin-top: 40px;
+      padding-bottom: 24px;
+    }
+
+    @media (max-width: 500px) {
+      .header h1 { font-size: 1.8rem; }
+      .content { padding: 24px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <span class="header-mascot">🦋</span>
+    <div class="header-badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="header-meta">Effective date: June 24, 2026 &nbsp;·&nbsp; Developer: Chonky Chau</p>
+  </div>
+
+  <div class="content">
+
+    <div class="intro-card">
+      This privacy policy applies to the <strong>Ya Broke</strong> app for mobile devices, together with any related services operated by Chonky Chau (collectively, the "Application"). Chonky Chau is hereby referred to as the "Service Provider".
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📡</span> Information Collection and Use</h2>
+      <p>The Application collects information when you download and use it. This information may include:</p>
+      <ul>
+        <li>Your device's Internet Protocol address</li>
+        <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
+        <li>The time spent on the Application</li>
+        <li>The mobile operating system you use</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🍪</span> Cookies and Tracking Technologies</h2>
+      <p>The Application or its third-party SDKs may use cookies, SDKs, pixels, and similar technologies to support functionality, analytics, or service delivery. Where required by applicable law, the Service Provider will obtain consent before using non-essential tracking technologies.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🔗</span> Third Party Access</h2>
+      <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application. The Application uses the following third-party services, each with their own privacy policy:</p>
+      <div class="pills">
+        <a class="pill" href="https://www.google.com/policies/privacy/">Google Play Services</a>
+        <a class="pill" href="https://policies.google.com/technologies/partner-sites">AdMob</a>
+        <a class="pill" href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a>
+        <a class="pill" href="https://firebase.google.com/support/privacy/">Firebase Crashlytics</a>
+      </div>
+      <p style="margin-top:14px;">The Service Provider may disclose collected information:</p>
+      <ul>
+        <li>As required by law, such as to comply with a subpoena or similar legal process</li>
+        <li>When necessary to protect rights, safety, or investigate fraud</li>
+        <li>With trusted service providers who have agreed to adhere to this privacy policy</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🌏</span> International Data Transfers</h2>
+      <p>The Service Provider or its third-party service providers may transfer personal data to countries outside your country of residence. Where applicable law requires safeguards, the Service Provider will use appropriate mechanisms such as Standard Contractual Clauses (SCCs) or other legally recognized transfer mechanisms.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🚪</span> Opt-Out Rights</h2>
+      <p>You can stop further collection of information by uninstalling the Application. To request deletion of your personal data or withdraw consent, contact the Service Provider at <a href="mailto:chonkycantcode@gmail.com">chonkycantcode@gmail.com</a>.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🗂️</span> Data Retention Policy</h2>
+      <ul>
+        <li><strong>User Provided Data:</strong> Retained for the duration of your use plus 12 months, unless longer retention is required by law</li>
+        <li><strong>Automatically Collected Data:</strong> Retained for up to 24 months from collection</li>
+        <li><strong>Aggregated and Anonymized Data:</strong> Retained indefinitely as it no longer identifies you</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">⚖️</span> Your Rights</h2>
+      <p>You may request access to, correction of, or deletion of your personal data. To exercise these rights, contact the Service Provider at <a href="mailto:chonkycantcode@gmail.com">chonkycantcode@gmail.com</a>.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🌴</span> Your California Privacy Rights (CCPA/CPRA)</h2>
+      <p>If you are a California resident, you have the right to know what personal information is collected, the right to delete personal information, the right to opt out of the sale or sharing of personal information, and the right to non-discrimination. To exercise your rights, contact <a href="mailto:chonkycantcode@gmail.com">chonkycantcode@gmail.com</a>.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">👶</span> Children</h2>
+      <p>The Application is not intended for children under 16 years of age. The Service Provider does not knowingly collect personally identifiable information from children. If you are a parent or guardian and believe your child has provided personal information, please contact <a href="mailto:chonkycantcode@gmail.com">chonkycantcode@gmail.com</a> immediately.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🔒</span> Security</h2>
+      <p>The Service Provider provides physical, electronic, and procedural safeguards to protect information it processes and maintains.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🚨</span> Data Breach Notification</h2>
+      <p>If a data breach occurs affecting your personal data, the Service Provider will notify you in accordance with applicable legal requirements.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📝</span> Changes</h2>
+      <p>This Privacy Policy may be updated from time to time. The Service Provider will notify you of material changes by posting the updated policy with a new effective date. Previous versions are available upon request.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">✅</span> Your Consent</h2>
+      <p>By using the Application, you consent to the processing of your information as described in this Privacy Policy.</p>
+    </div>
+
+    <div class="contact-card">
+      <h2>Questions?</h2>
+      <p>We're a one-person team and we actually read our emails.</p>
+      <a class="contact-btn" href="mailto:chonkycantcode@gmail.com">chonkycantcode@gmail.com</a>
+    </div>
+
+    <footer>© 2026 Chonky Chau · Ya Broke · All rights reserved.</footer>
+
+  </div>
+
+</body>
+</html>
